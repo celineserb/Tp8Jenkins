@@ -17,9 +17,9 @@ pipeline {
       }
     }
 
-    stage('CodeAnalysis') {
+    stage('cucember reports') {
       steps {
-        waitForQualityGate true
+        cucumber 'Features/matrix.feature'
       }
     }
 
