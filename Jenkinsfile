@@ -7,7 +7,7 @@ pipeline {
         bat 'C:\\Users\\esdi-pc\\Desktop\\SIL\\OUTILS\\Gradle\\gradle-5.6\\bin\\gradle javadoc'
         archiveArtifacts 'build/libs/*.jar'
         bat 'C:\\Users\\esdi-pc\\Desktop\\SIL\\OUTILS\\Gradle\\gradle-5.6\\bin\\gradle test'
-        archiveArtifacts 'build/test-results/test'
+        junit 'build/test-results/test'
       }
     }
 
