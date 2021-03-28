@@ -10,12 +10,25 @@ pipeline {
         junit 'build/test-results/test/*'
       }
     }
+post{
+succes{
 
     stage('MailNotification') {
       steps {
         mail(subject: 'succes', body: 'succes', bcc: 'hc_serbouh@esi.dz', cc: 'hc_serbouh@esi.dz')
-      }
     }
+    }}
+
+failure{
+
+    stage('MailNotification') {
+      steps {
+        mail(subject: 'echec', body: 'echec', bcc: 'hc_serbouh@esi.dz', cc: 'hc_serbouh@esi.dz')
+    }
+    }}
+
+
+}
 
   }
 }

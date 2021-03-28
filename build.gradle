@@ -36,10 +36,10 @@ task generateMatrixAPIDocs (type:Copy){
 publishing {
     repositories {
         maven {
-            url 'https://mymavenrepo.com/repo/EU8mbJLL7OxXIU3l4xxo/'
+            url 'https://mymavenrepo.com/repo/zttnSutEQGDgaXGlGfDi/'
             credentials {
                 username 'myMavenRepo'
-                password 'test'
+                password '00000000'
             }
         }
     }
@@ -53,10 +53,9 @@ publishing {
 
 
 slack {
-    webhookUrl 'https://api.slack.com/apps/A01MS7S869G/incoming-webhooks?'
+    webhookUrl 'https://hooks.slack.com/services/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'
     message {
-        text = "Bonjour le projet est deploiyé"
-	channel= '#tp-gradle'
+        text = "Project is built newly and deployed into BZZZZ"
     }
 }
 
