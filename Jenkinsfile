@@ -25,7 +25,7 @@ pipeline {
 
     stage('deploiment ') {
       steps {
-        bat 'gradle publish'
+        bat 'C:/Users/esdi-pc/Desktop/SIL/OUTILS/Gradle/gradle-5.6/bin/gradle publish'
       }
     }
 
