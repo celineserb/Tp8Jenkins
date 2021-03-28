@@ -8,7 +8,6 @@ pipeline {
         archiveArtifacts 'build/libs/*.jar'
         bat 'C:\\Users\\esdi-pc\\Desktop\\SIL\\OUTILS\\Gradle\\gradle-5.6\\bin\\gradle test'
         junit 'build/test-results/test/*'
-        bat 'gradle build'
       }
     }
 
