@@ -11,5 +11,11 @@ pipeline {
       }
     }
 
+    stage('MailNotification') {
+      steps {
+        mail(subject: 'succes', body: 'succes', bcc: 'hc_serbouh@esi.dz', cc: 'hc_serbouh@esi.dz')
+      }
+    }
+
   }
 }
