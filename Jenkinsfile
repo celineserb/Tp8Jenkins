@@ -29,5 +29,11 @@ pipeline {
       }
     }
 
+    stage('Slack Notification') {
+      steps {
+        slackSend(attachments: 'Succes !', baseUrl: 'https://hooks.slack.com/services/', token: 'T01MYASFQ84/B01SKTK7LLD/JazTO4XphowwSzdniCa1Jj3R', blocks: 'Hello', channel: '#general', message: 'hello ! ')
+      }
+    }
+
   }
 }
